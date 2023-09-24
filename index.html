@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your JavaScript Playground</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 480px)"
+      and
+      href="src/css/phone.css"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo-div">
+        <h1 id="logo">Artify</h1>
+        <div id="search-input">
+          <input type="text" id="input" />
+          <div id="search">🔍</div>
+        </div>
+      </div>
+
+      <ul class="list">
+        <li class="item">Classic Art</li>
+        <li class="item">Modern Art</li>
+        <li class="item">Abstract Art</li>
+        <li class="item">Minimal Art</li>
+        <li id="fav">Favourites🤍</li>
+      </ul>
+    </nav>
+
+    <div id="main"></div>
+
+    <div id="popup" class="display-none">
+    </div>
+
+    <script type="module" src="src/js/index.js"></script>
+  </body>
+</html>

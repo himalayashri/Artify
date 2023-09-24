@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --bg: rgb(239 179 208);
+  --main: rgb(242 15 126);
+  --main-dark: rgb(200, 13, 103);
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  opacity: 1;
+  justify-content: space-evenly;
+}
+#search-input {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+#input {
+  margin-right: 12px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--main);
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg);
+  margin-bottom: 4px;
+}
+#logo-div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#logo {
+  margin: 10px 30px 10px 50px;
+  background-color: var(--main);
+  border-radius: 30%;
+  padding: 6px 30px;
+  font-size: 28px;
+  border: 2px solid black;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+.list li {
+  margin-right: 30px;
+  padding: 8px 13px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--main);
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+.list li:hover {
+  background-color: var(--main-dark);
+}
+.pics {
+  width: 295px;
+  height: 295px;
+  object-fit: cover;
+  transition: all ease-in-out 300ms;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.pics:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+#popup {
+  height: 300px;
+  width: 800px;
+  background-color: white;
+  position: sticky;
+  top: 10px;
+  bottom: 190px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  border-radius: 20px;
+}
+
+#popup-inner {
+  background-color: var(--bg);
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px 3px white, -2px -2px 20px 8px var(--main);
+}
+
+#big-pic {
+  width: 60%;
+}
+
+#big-pic img {
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+#details {
+  width: 40%;
+  color: black;
+  margin: auto;
+  margin-right: 30px;
+}
+
+.display-none {
+  display: none;
+}
+.display-block {
+  display: block;
+}
+
+#heart,
+.heart-rm {
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: rgb(235, 99, 144);
+  width: 100%;
+}
+#heart:hover {
+  transform: scale(1.1);
+}
+.heart-rm:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 665px) and (max-width: 1213px) {
+  #navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+  #popup {
+    height: 100px;
+    width: 300px;
+    top: 0px;
+    bottom: 400px;
+    box-shadow: none;
+  }
+
+  #popup-inner {
+    width: 80%;
+    height: 400px;
+    justify-content: none;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  #big-pic {
+    width: 30%;
+    margin-top: 20px;
+    height: 30%;
+  }
+
+  #big-pic img {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 10px;
+  }
+  #details {
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 665px) {
+  .pics {
+    width: 30%;
+    height: 30%;
+  }
+  #navbar {
+    background-color: var(--bg);
+    flex-direction: column;
+    width: 100%;
+  }
+  #navbar ul {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: var(--main);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #popup {
+    height: 100px;
+    width: 300px;
+    bottom: 300px;
+  }
+
+  #popup-inner {
+    width: 50%;
+    height: 350px;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  #big-pic {
+    margin-top: 20px;
+    height: 30%;
+  }
+
+  #big-pic img {
+    margin: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+
+    border-radius: 10px;
+  }
+  #details {
+    height: 100%;
+    width: 80%;
+    padding-top: 20px;
+    color: black;
+    margin: 0;
+    font-size: 13px;
+  }
+  #heart,
+  .heart-rm {
+    font-size: 15px;
+    padding: 0px;
+  }
+}
