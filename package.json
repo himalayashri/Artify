@@ -1,4 +1,5 @@
 {
+  "type":"module",
   "name": "knowledgehut-js-starter",
   "version": "2.0.2",
   "description": "A starter kit for building web applications by KnowledgeHut upGrad for the JavaScript and FullStack Programs",
